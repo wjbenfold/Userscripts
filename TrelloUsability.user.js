@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Trello Usability
 // @namespace    http://tampermonkey.net/
-// @version      0.2
-// @description  try to take over the world!
+// @version      0.3
+// @description  Improve appearance and usability of Trello
 // @author       WJB
 // @match        trello.com/*
 // @grant        none
@@ -84,8 +84,4 @@
     }
 
     document.addEventListener('DOMSubtreeModified', attachBoardObserver); //We're spamming a bit here, but not noticeably affecting load times
-
-    // Used to do this
-    // document.addEventListener('onclick', addButtonFunction, false);
-    //document.addEventListener('DOMSubtreeModified', addButtonFunction, false); //We're spamming a bit here, but not noticeably affecting load times
 })();
